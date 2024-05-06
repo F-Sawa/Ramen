@@ -7,7 +7,6 @@ body{
 ul{
     list-style-type: none;
     width: 80%;
-    
 }
 
 li{
@@ -108,6 +107,7 @@ li{
     text-align: center;
     display: flex;
     margin-top: 1px;
+    flex-wrap: wrap;
 }
 
 /*ANIMACIONES*/
@@ -276,7 +276,6 @@ li{
     max-width: 35%;
     margin-left: 25%;
     margin-top: 85px;
-  
 }
 
 /*LOG & SING CARD*/
@@ -311,20 +310,33 @@ text-align: center;
 }
 
 #popup input{
- border-radius: 25px;
+ border-radius: 15px;
+ border-style: hidden;
+ outline: none;
+ background-color:transparent;
+ margin-top: 0px;
  height: 30px;
  margin-bottom: 30px;
  padding-left: 10px;
+ height: 35px;
+font-family: "Montserrat", sans-serif;
+font-optical-sizing: auto;
+font-size: 20px;
+color:#fedd8c;
+text-decoration-line: underline;
 }
 
 #popup button{
-border-radius: 25px;
+border-radius: 20px;
+border-color: #fedd8c;
+border-style: groove;
 background-color: #ebaa04;
-height: 25px;
+height: 35px;
 font-family: "Montserrat", sans-serif;
 font-optical-sizing: auto;
 font-size: 12px;
-color: #990000;
+color:#fedd8c;
+
 }
 
 #cerrar{
@@ -333,3 +345,171 @@ color: #990000;
     position: absolute;
     margin-left: 40%;
 }
+
+
+/*RESPONSIVE*/
+
+  @media all and (max-width: 480px) {
+    #image img {
+        max-width: 100%;
+        margin-top: 20%;
+    }
+
+    #saludo {
+    font-family: "Noto Sans JP", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    margin-top: 80px;
+    font-size: 30px;
+    color: aliceblue;
+}
+
+#scroll{
+    visibility: hidden;
+}
+
+.cnt
+{
+   display: flex;
+   min-width: 48%;
+   width: 48%;
+   float: left;
+   margin-left: 1%;
+   margin-right: 1%;
+   flex-wrap: wrap;
+}
+
+.frente{
+    width: 48%;
+    min-width: 48%;
+}
+
+.frente h2{
+    /*Fuente*/
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 15px;
+    font-style: normal;
+    font-size: 16px;
+    color: aliceblue;
+    margin-top: 45%;
+}
+
+.dorso a{
+
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 20px;
+    font-style: normal;
+    font-size: 18px;
+    color: aliceblue;
+}
+
+.dorso h2{
+
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 20px;
+    font-style: normal;
+    font-size: 10px;
+    color: aliceblue;
+    line-height: 16px;
+    margin-bottom: 20px;
+}
+
+  }
+
+
+  @media all and (max-width: 801px) {
+    #image img {
+        max-width: 100%;
+        margin-top: 20%;
+    }
+
+    #saludo {
+    font-family: "Noto Sans JP", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    margin-top: 80px;
+    font-size: 30px;
+    color: aliceblue;
+}
+
+#scroll{
+    visibility: hidden;
+}
+
+.cnt
+{
+   display: flex;
+   min-width: 40%;
+   width: 40%;
+   float: left;
+   margin-left: 1%;
+   margin-right: 1%;
+   flex-wrap: wrap;
+}
+
+.frente{
+    width: 40%;
+    min-width: 40%;
+}
+}
+
+
+@media all and (max-width: 1024px) {
+
+#image img {
+    max-width: 100%;
+    margin-top: 20%;
+    }
+
+#saludo {
+    font-family: "Noto Sans JP", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    margin-top: 80px;
+    font-size: 30px;
+    color: aliceblue;
+    }
+
+    .frente h2{
+        /*Fuente*/
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 15px;
+        font-style: normal;
+        font-size: 16px;
+        color: aliceblue;
+        margin-top: 45%;
+    }
+    
+    .dorso a{
+    
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 20px;
+        font-style: normal;
+        font-size: 18px;
+        color: aliceblue;
+    }
+    
+    .dorso h2{
+    
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 20px;
+        font-style: normal;
+        font-size: 10px;
+        color: aliceblue;
+        line-height: 16px;
+        margin-bottom: 20px;
+    }
+
+  }
+
+
+
