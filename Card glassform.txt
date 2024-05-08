@@ -1,0 +1,65 @@
+#card
+{
+width: 100%;
+height: 100%;
+visibility: hidden;
+position:fixed;
+z-index: 20;
+}
+
+#popup
+{
+margin-left: 30%;
+margin-top: 10%;
+height: 20%;
+width: 25%;
+padding: 80px;
+border-radius: 20px;
+font-size: 10px;
+color:white;
+background: #ebaa0428;
+-webkit-backdrop-filter: blur(5px);
+backdrop-filter: blur(5px);
+border: 1.5px solid rgba(76, 205, 153, 0.2);
+position: absolute;
+z-index: 99;
+/*visibility:hidden;*/
+text-align: center;
+}
+
+#popup input{
+ border-radius: 15px;
+ border-style: hidden;
+ outline: none;
+ background-color:transparent;
+ margin-top: 0px;
+ height: 30px;
+ margin-bottom: 30px;
+ padding-left: 10px;
+ height: 35px;
+font-family: "Montserrat", sans-serif;
+font-optical-sizing: auto;
+font-size: 20px;
+color:#fedd8c;
+text-decoration-line: underline;
+}
+
+#popup button{
+border-radius: 20px;
+border-color: #fedd8c;
+border-style: groove;
+background-color: #ebaa04;
+height: 35px;
+font-family: "Montserrat", sans-serif;
+font-optical-sizing: auto;
+font-size: 12px;
+color:#fedd8c;
+
+}
+
+#cerrar{
+    margin-top: -13%;
+    height: 10%;
+    position: absolute;
+    margin-left: 40%;
+}

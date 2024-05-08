@@ -1,9 +1,19 @@
+/*COLORS
+Rojo Rubi: #bd242b - 189, 36, 43
+Granate: #990000 - 153, 0, 0
+aliceblue: 240, 248, 255
+*/
+
+
 /*HOME*/
+
 body{
-    background-image:url("./IMG/negra02.jpg");
+     background-image:url("./IMG/negra02.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    font-family: "Montserrat", sans-serif;
 }
+
 ul{
     list-style-type: none;
     width: 80%;
@@ -27,7 +37,7 @@ li{
     text-align: center;
     margin-left: -8px;
     border-radius: 20px;
-    background: linear-gradient(#bd242b, #990000);
+    background: linear-gradient(rgb(189, 36, 43), rgb(153, 0, 0));
     z-index: 19;
     position: fixed;
 }
@@ -54,6 +64,7 @@ li{
     font-weight: 20px;
     font-style: normal;
     color: aliceblue;
+    cursor: pointer;
 }
 
 #saludo{
@@ -89,21 +100,12 @@ li{
     display:inline;
 }
 
-#scroll{
-    width: 64px;
-    height: 64px;
-    float: right;
-    margin-top: 23%;
-}
-
-#scroll img{
-    width: 100%;
-}
 
 /*MAIN*/
 
 #menus{
     width:100%;
+    height: 100%;
     text-align: center;
     display: flex;
     margin-top: 1px;
@@ -195,10 +197,10 @@ li{
     font-style: normal;
     font-size: 20px;
     color: aliceblue;
+    cursor: pointer;
 }
 
 .dorso h2{
-
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 20px;
@@ -207,7 +209,7 @@ li{
     color: aliceblue;
     line-height: 16px;
     margin-bottom: 20px;
-}
+  }
 
 .frente h2{
     /*Fuente*/
@@ -227,135 +229,249 @@ li{
 }
 
 
+ /* SOBRE NOSOTROS*/
+
+#somos {
+    
+    width: 100%;
+    height: 100%;
+    text-align: right;
+    margin-right: 30px;
+   
+ }
+
+#pres2{
+    height: 100%;
+    width: 48%;
+    float: right;
+    margin-left: 20px;
+}
+
+#image2 {
+    height: 100%;
+    width: 50%;
+    text-align: center;
+    display:inline;
+       
+}
+
+#somos h2{
+    font-family: "Noto Sans JP", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    margin-top: 80px;
+    font-size: 60px;
+    color: aliceblue;
+    margin-right: 40px;
+    
+}
+
+#somos p{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 20px;
+    font-style: normal;
+    font-size: 20px;
+    color: aliceblue;
+    margin-bottom: 100px;
+    margin-right: 40px;
+  }
+
+
 /*FOOTER*/
 
 #footer{
     width: 100%;
-    height: 170px;
-    background: linear-gradient(#bd242b, #990000);
-    text-align: center;
-
-    /*Fuentes*/
+    background: linear-gradient(rgb(189, 36, 43), rgb(153, 0, 0));
+    border-radius: 20px;
+    bottom: 0px;
+    display:grid;
+    
+  
+/*Fuentes*/
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 2px;
     font-style: normal;
     font-size: 12px;
     color: aliceblue;
-   
-}
+   }
 
 #footer_al{
-    width:50%;
+    grid-column: 2 / 3;
+    grid-row: 1;
     display:flex;
     flex-direction: row;
-    margin-left: 20%;
+   width: 100%;
+   margin-left: 10%;
 }
 
 #logbebe{
-    width: 100px;
-    height: 100px;
-    float: left;
-    margin-left: 30px;
-    margin-top: 25px;
+    grid-column: 1 / 3;
+    grid-row: 1;
+    width: 80px;
+    height: 80px;
+    place-content: center;
+    
 }
 
 #redes{
-   width: 20%;
+    grid-column: 3 / 3;
+    grid-row: 2;
    float: right;
+   text-align: center;
 }
 
 #footer_al a{
     margin-left: 10px;
     margin-right: 10px;
     margin-top: 25px;
-
+    cursor: pointer;
 }
 
 #ddrr {
-    max-width: 35%;
+    grid-column: 2 / 3;
+    grid-row: 2;
+    /*max-width: 35%;*/
     margin-left: 25%;
-    margin-top: 85px;
-}
+    margin-top: 45px;
+
+ }
+
 
 /*LOG & SING CARD*/
+.form{
+    background-color: #ebaa0428;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
+    border: 1.5px solid rgba(238, 192, 42, 0.459);
+    margin: auto;
+    width: 90%;
+    max-width: 30%;
+    padding:4.5em 3em;
+    border-radius: 15px;
+    box-shadow:0 5px 10px -5px rgb(0 0 / 30%);
+    text-align: center;
+    position: fixed;
+    z-index: 20;
+    margin-left: 30%;
+  }
 
-#card
-{
-width: 100%;
-height: 100%;
-visibility: hidden;
-position:fixed;
-z-index: 20;
+.form_title{
+    font-size: 2rem;
+    margin-bottom: .5em;
+    color: aliceblue;
 }
 
-#popup
-{
-margin-left: 30%;
-margin-top: 10%;
-height: 20%;
-width: 25%;
-padding: 80px;
-border-radius: 20px;
-font-size: 10px;
-color:white;
-background: #ebaa0428;
--webkit-backdrop-filter: blur(5px);
-backdrop-filter: blur(5px);
-border: 1.5px solid rgba(76, 205, 153, 0.2);
-position: absolute;
-z-index: 99;
-/*visibility:hidden;*/
-text-align: center;
+.form_parrafo{
+    font-weight:300 ;
+    color: aliceblue;
 }
 
-#popup input{
- border-radius: 15px;
- border-style: hidden;
- outline: none;
- background-color:transparent;
- margin-top: 0px;
- height: 30px;
- margin-bottom: 30px;
- padding-left: 10px;
- height: 35px;
-font-family: "Montserrat", sans-serif;
-font-optical-sizing: auto;
-font-size: 20px;
-color:#fedd8c;
-text-decoration-line: underline;
+.form_link{
+    font-weight: 400;
+    color: rgb(244, 247, 90);
 }
 
-#popup button{
-border-radius: 20px;
-border-color: #fedd8c;
-border-style: groove;
-background-color: #ebaa04;
-height: 35px;
-font-family: "Montserrat", sans-serif;
-font-optical-sizing: auto;
-font-size: 12px;
-color:#fedd8c;
+.form_cont{
+    margin-top: 3em;
+    display: grid;
+    gap: 2.5em;
 
+}
+
+.form_grup{
+    position: relative;
+    --color: aliceblue;
+}
+
+.form_input{
+    width: 100%;
+    background: none;
+    color: #706c6c;
+    font-size: 1rem ;
+    padding: .6em .3em;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--color);
+    font-family: "Montserrat", sans-serif;
+}
+
+
+.form_input:not(:placeholder-shown){
+    color: saddlebrown;
+    
+}
+
+.form_input:focus + .form_label,
+.form_input:not(:placeholder-shown) + .form_label{
+   transform: translateY(-12px) scale(.7);
+   transform-origin: left top;
+   color: #ebaa04;
+}
+
+.form_label{
+    color: var(--color);
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 5px;
+    transform: translateY(10px);
+    transition: transform .5s, color .3s;
+
+}
+
+.form_submit{
+    background-color: #ebaa04;
+    color: aliceblue;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    padding: .8em 0;
+    border: none;
+    border-radius: .5em;
+}
+
+.form_line{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #ebaa04;
+    transform: scale(0);
+    transform: left bottom;
+    transition: transform .4s;
+}
+
+.form_input:focus ~ .form_line,
+.form_input:not(:placeholder-shown) ~ .form_line{
+    transform: scale(1);
 }
 
 #cerrar{
-    margin-top: -13%;
-    height: 10%;
-    position: absolute;
-    margin-left: 40%;
+    float: right;
+    margin-top: -50px;
+    margin-right: -25px;
+}
+
+@media (max-width:480px){
+    .form_title{
+        font-size: 1.8rem;
+    }
 }
 
 
 /*RESPONSIVE*/
 
-  @media all and (max-width: 480px) {
-    #image img {
+@media all and (max-width: 480px) {
+#image img {
         max-width: 100%;
         margin-top: 20%;
     }
 
-    #saludo {
+#saludo {
     font-family: "Noto Sans JP", sans-serif;
     font-optical-sizing: auto;
     font-weight: 600;
@@ -421,13 +537,13 @@ color:#fedd8c;
   }
 
 
-  @media all and (max-width: 801px) {
-    #image img {
+@media all and (max-width: 801px) {
+#image img {
         max-width: 100%;
         margin-top: 20%;
     }
 
-    #saludo {
+#saludo {
     font-family: "Noto Sans JP", sans-serif;
     font-optical-sizing: auto;
     font-weight: 600;
@@ -476,7 +592,7 @@ color:#fedd8c;
     color: aliceblue;
     }
 
-    .frente h2{
+.frente h2{
         /*Fuente*/
         font-family: "Montserrat", sans-serif;
         font-optical-sizing: auto;
@@ -487,7 +603,7 @@ color:#fedd8c;
         margin-top: 45%;
     }
     
-    .dorso a{
+.dorso a{
     
         font-family: "Montserrat", sans-serif;
         font-optical-sizing: auto;
@@ -497,7 +613,7 @@ color:#fedd8c;
         color: aliceblue;
     }
     
-    .dorso h2{
+.dorso h2{
     
         font-family: "Montserrat", sans-serif;
         font-optical-sizing: auto;
@@ -509,7 +625,9 @@ color:#fedd8c;
         margin-bottom: 20px;
     }
 
-  }
+ }
+
+ 
 
 
 
