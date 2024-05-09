@@ -1,9 +1,33 @@
 <!--FORM CONTACTO-->
-<form action="">
-    <h3>Escribenos y en breve nos pondremos en contacto</h3>
-    <input type="text" placeholder="Nombre" name="person" required> <br>
-    <input type="Mail" placeholder="email" name="mail" required> <br>
-    <textarea id="msg" name="user_message"></textarea>
-    <input type="checkbox" name="rnews" value="Recibe nuestros newsletters" id="ckeck">
-    <button type="submit"> Enviar </button>
+
+<form class="form"> 
+    <img id="cerrar" onclick= "closePopUp();" src="./IMG/close.png" alt="Se cierra">
+    <h2 class="form_title">Contactanos</h2>
+    <p class="form_parrafo">Escribenos y en breve nos pondremos en contacto.</p>
+
+    <div class="form_cont">
+       <div class="form_grup">
+            <input type="text" id="name" class="form_input" placeholder=" ">
+            <label for="name" class="form_label"> Nombre </label>
+            <span class="form_line"></span>
+        </div>
+    </div>
+
+    <div class="form_cont">
+        <div class="form_grup">
+            <input type="text" id="Mail" class="form_input" placeholder=" " required>
+            <label for="Mail" class="form_label"> Mail </label>
+            <span class="form_line"></span>
+        </div>
+    </div>
+
+    <div class="form_cont">
+        <div class="form_grup">
+            <!--<input type="password" id="Password" class="form_input" placeholder=" " required>
+            <label for="Password" class="form_label"> Contraseña </label>-->
+            <textarea name="text" cols="52" rows="5" id="mns"></textarea>
+            <span class="form_line"></span>
+        </div>
+        <input type="submit" class="form_submit" value="Enviar">
+    </div>
 </form>

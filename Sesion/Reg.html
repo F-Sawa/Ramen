@@ -1,0 +1,32 @@
+<!--FOMULARIO DE REGISTRO-->
+
+<form class="form"> 
+    <img id="cerrar" onclick= "closePopUp();" src="./IMG/close.png" alt="Se cierra">
+    <h2 class="form_title"> Crear nueva cuenta </h2>
+  
+    <div class="form_cont">
+       <div class="form_grup">
+            <input type="text" id="User" class="form_input" placeholder=" ">
+            <label for="name" class="form_label"> User </label>
+            <span class="form_line"></span>
+        </div>
+    </div>
+
+    <div class="form_cont">
+        <div class="form_grup">
+            <input type="text" id="Mail" class="form_input" placeholder=" " required>
+            <label for="User" class="form_label"> Mail </label>
+            <span class="form_line"></span>
+        </div>
+    </div>
+
+    <div class="form_cont">
+        <div class="form_grup">
+            <input type="password" id="Password" class="form_input" placeholder=" " required>
+            <label for="Password" class="form_label"> Contraseña </label>
+            <span class="form_line"></span>
+        </div>
+        <a> <input type="checkbox" name="Newsletters" id="News" value="" > Recibe nuestros newsletters </a>
+        <input type="submit" class="form_submit" value="Registrarse">
+    </div>
+</form>
