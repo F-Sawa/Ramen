@@ -7,6 +7,7 @@
     <link rel="icon" href="./IMG/Ramen.ico" type="image/x-icon">
     <link rel="stylesheet" href="Style.css">
     <script src="Log.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 
     <!--FUENTES-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,13 +28,14 @@ rel="stylesheet">
     <div id="popup"> </div>
     </div>
 
+
 <!--HOME-->
 
 <section>
-<nav id="header">
+<nav class="mart" id="header">
 <img id="logo" src="./IMG/Ramen_LOGO.png" alt="Aqui estaria el logo,si hubiera uno">
 
-<ul>
+<ul class="padt2">
 <li id="home">Home </li>
 <li id="tienda"> Tienda </li>
 
@@ -69,7 +71,7 @@ rel="stylesheet">
 
 <div class="cnt">
 <div id="sushi" class="frente" onclick="doRotar('sushi', 'sushi2', 'comidas', 'aperit', 'postre', 'comidas2', 'aperit2','postre2')"> <h2>sushi</h2> <br> <img src="./IMG/sushi.png" alt="sushi"> </div>
-<div id="sushi2" class="dorso" onclick="doRotar('sushi2', 'sushi', 'comidas', 'aperit', 'postre', 'comidas2', 'aperit2','postre2')"> <h2>sushi</h2>
+<div id="sushi2" class="dorso padt5" onclick="doRotar('sushi2', 'sushi', 'comidas', 'aperit', 'postre', 'comidas2', 'aperit2','postre2')"> <h2>sushi</h2>
     <a> Arroz para sushi </a> <br>
     <a> Makis </a> <br>
     <a> Rolls </a> <br>
@@ -80,7 +82,7 @@ rel="stylesheet">
 
 <div class="cnt">
 <div id="comidas" class="frente" onclick="doRotar( 'comidas', 'comidas2','sushi', 'aperit', 'postre','sushi2', 'aperit2','postre2')" > <h2>Comidas <br> & <br> Sopas</h2> <br> <img src="./IMG/Sopas.png" alt="sopas"> </div>
-<div id="comidas2" class="dorso" onclick="doRotar( 'comidas2', 'comidas','sushi', 'aperit', 'postre','sushi2', 'aperit2','postre2')"> <h2>Comidas <br> & <br> Sopas</h2> 
+<div id="comidas2" class="dorso padt5" onclick="doRotar( 'comidas2', 'comidas','sushi', 'aperit', 'postre','sushi2', 'aperit2','postre2')"> <h2>Comidas <br> & <br> Sopas</h2> 
     <a> Ramen </a> <br>
     <a> Miso </a> <br>
     <a> Udon </a> <br>
@@ -92,7 +94,7 @@ rel="stylesheet">
 
 <div class="cnt">
 <div id="aperit" class="frente" onclick="doRotar( 'aperit', 'aperit2','sushi', 'comidas', 'postre','sushi2', 'comidas2','postre2')"> <h2>Aperitivos</h2> <br> <img src="./IMG/Aperitivo.png" alt="Tempura"></div>
-<div id="aperit2" class="dorso" onclick="doRotar( 'aperit2', 'aperit','sushi', 'comidas', 'postre','sushi2', 'comidas2','postre2')"> <h2>Aperitivos</h2> 
+<div id="aperit2" class="dorso padt5" onclick="doRotar( 'aperit2', 'aperit','sushi', 'comidas', 'postre','sushi2', 'comidas2','postre2')"> <h2>Aperitivos</h2> 
     <a> Takoyaki </a> <br>
     <a> Tempura </a> <br>
     <a> Onigiri </a> <br>
@@ -104,7 +106,7 @@ rel="stylesheet">
 
 <div class="cnt">
 <div id="postre" class="frente" onclick="doRotar( 'postre', 'postre2','sushi', 'comidas', 'aperit','sushi2', 'comidas2','aperit2')"> <h2>Postres</h2> <br> <img src="./IMG/Postres.png" alt="Daifuku"> </div>
-<div id="postre2" class="dorso" onclick="doRotar( 'postre2', 'postre','sushi', 'comidas', 'aperit','sushi2', 'comidas2','aperit2')"> <h2>Postres</h2>
+<div id="postre2" class="dorso padt5" onclick="doRotar( 'postre2', 'postre','sushi', 'comidas', 'aperit','sushi2', 'comidas2','aperit2')"> <h2>Postres</h2>
     <a> Dorayaki </a> <br>
     <a> Mochi </a> <br>
     <a> Daifuku </a> <br>
@@ -136,35 +138,57 @@ rel="stylesheet">
 <div id="image2">
     <img src="./IMG/sushicito2.png" alt="Comida Rica">
 </div>
-
 </div>
 </section>
 
 <!--FOOTER-->
 
-<section>
-    <div id="footer">
-    
-<img id="logbebe" src="./IMG/Ramen_ByN.png" alt="aca va el loguito bebe">
-<h6>拉麺</h6>
-<div id="footer_al">
-    <a onclick="showPopPup('/sesion/Cont.html');"> Contacto </a>
-    <a> Donde estamos </a>
-    <a> Sobre Nosotros </a>
-    <a> Politicas de privacidad </a>
-</div>   
+<footer class="footer">
+    <div class="container">
+        <div class="footer-row">
 
-   <div id="redes">
-    
-    <img src="./IMG/fb.png" alt="Face">
-    <img src="./IMG/insta.png" alt="Insta">
-    <img src="./IMG/tik.png" alt="Tik-Tok"> <br>
-    <a> Seguinos </a>
-</div>
+            <div class="footer-links">
+                <h4> RAMEN </h4>
+                <ul>
+                    <li> <a href="#"> Nosotros </a></li>
+                    <li> <a href="#"> Servicios </a></li>
+                    <li> <a href="#"> Tienda  </a></li>
+                    <li> <a href="#"> Envios </a></li>
+                </ul>
 
-<div id="ddrr"> <a> Todos los derechos reservados | F. Sawa </a> </div>
-</div>
-</section>
+            </div>
+            <div class="footer-links">
+                <h4> AYUDA </h4>
+                <ul>
+                    <li> <a href="#"> Preguntas frecuentes </a></li>
+                    <li> <a href="#"> Politica de privacidad </a></li>
+                    <li> <a href="#"> Politica de cookies </a></li>
+                </ul>
+
+            </div>
+            <div class="footer-links">
+                <h4> CONTACTO </h4>
+                <ul>
+                    <li> <a onclick="showPopPup('/sesion/Cont.html');"> Escribenos </a></li>
+                    <li> <a href="#"> Donde estamos </a></li>            
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h4> SIGUENOS </h4>
+                <div class="social">
+                    <a href="#"><i class=" fab fa-facebook-f"></i></a>
+                    <a href="#"><i class=" fab fa-instagram"></i></a>
+                    <a href="#"><i class=" fab fa-twitter"></i></a>
+                    <a href="#"><i class=" fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="der">
+        <p>Todos los derechos reservardos 2024 | F. Sawa </p>
+    </div>
+</footer>
 
 </body>
 
