@@ -38,7 +38,7 @@ ul{
     margin-top: 10px;
 }
 
-ul li{
+ul li {
     display: inline;
     margin-left: 10px;
     font-size: 18px;
@@ -227,6 +227,7 @@ ul li:hover{
     font-size: 20px;
     color: aliceblue;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .dorso a:hover{
@@ -703,6 +704,38 @@ ul li:hover{
     }
 
  }
+
+ /*RECETAS*/
+
+.recetario{
+    background-image:url("./IMG/negra02.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+}
+
+h1{
+    font-family: "Noto Sans JP", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    margin-top: 80px;
+    font-size: 30px;
+    color: aliceblue;
+}
+
+
+
+.recetas{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 20px;
+    font-style: normal;
+    font-size: 14px;
+    color: aliceblue;
+    margin-bottom: 20px;
+}
 
  
 

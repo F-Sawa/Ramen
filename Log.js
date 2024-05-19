@@ -82,4 +82,135 @@ function FetchPage(pagina) //Funcion que lee la página y la devuelve su conteni
 }
 
 
+//Seccion Registro
+class Registro
+{
+    constructor(Nick,Usuario,Pass,Correo)
+    {
+        this.usuario=Usuario;
+        this.correo=Correo;
+        this.password=Pass;
+    }
+
+}
+class Login
+{
+    constructor(usuario)
+    {
+        this.usuario=usuario;
+        
+    }
+
+}
+
+function validarFormulario()
+ {
+    let formu = document.getElementById("registroForm");
+    //formu.addEventListener('submit', validaFormulario);
+    formu.preventDefault();
+
+    const User = document.querySelector("#User");
+    const Pass = document.querySelector("#Password");
+    const chkpol = document.querySelector("#aceptPol");
+    const email = document.querySelector("#Mail");
+    //const Correo = document.querySelector("#Correo");
+    var validation = true;
+
+        if(User.value.length < 3 || User.value.length > 20)
+            {
+                alert("Tu usuario debe tener entre 3 y 20 caracteres");
+                validation = false;
+                return;
+            }
+        if(Pass.value.length < 6 || Pass.value.length > 20)
+        {
+            alert("Tu Contraseña debe tener entre 6 y 20 caracteres");
+            validation = false;
+           return;
+        }
+
+          if (chkpol.checked == false) {
+         alert("Debe aceptar las políticas de privacidad para registrarse");
+         validation = false;
+         return;
+          }
+
+    if(validation==true){
+       // formu.submit();
+       tryReg(User.value, Pass.value, email.value );
+       alert("Datos guardados, utilice 'iniciar sesion' para testearlos!")
+       location.href="/"
+    } else{
+
+        return false;
+    }
+
+}
+/* La siguiente funcion guarda los datos de registro de la persona para usarlo como si se guardara en la bd,
+    este método solo será utilizado para guardar la info de registro a modo de usar el login y se borrará cuando
+    se programe el backend */
+    
+function tryReg(usuario, pass, email)
+{
+    const Registrodat= new Registro(usuario, pass, email);
+savedata(Registrodat);
+}
+function savedata(reg)
+{
+    localStorage.setItem("Registro",JSON.stringify(reg));
+}
+function loadData(usr,pass)
+{
+    let rk = localStorage.getItem("Registro");
+    rg = JSON.parse(rk);
+    if(usr==rg.usuario)
+        {
+        if(pass==rg.password)
+            {
+            let lg = new Login(rg.usuario);
+        return lg;
+            }
+        }
+        return new Login("");
+    /*
+    alert (rg.usuario);
+    alert (rg.password);
+    alert (rg.correo);
+    */
+}
+function tryIs()
+{
+    const formul = document.getElementById("#Loginform");
+    const User = document.querySelector("#lgUser");
+    const Pass = document.querySelector("#lgPass");
+    
+    let valida = true;
+    if(User.value.length < 3)
+        {
+               alert("Usuario o contraseña incorrectos!");
+               valida=false;
+               return; 
+        }
+     if(Pass.value.length < 6)
+        {
+               alert("Usuario o contraseña incorrectos!");
+               valida=false;
+               return; 
+        }
+    let loginData=loadData(User.value,Pass.value);
+    if(loginData.usuario=="")
+        {
+            alert("Usuario o contraseña incorrectos!");
+            valida=false;
+            return; 
+        }
+        if(valida==true)
+            {
+                alert("Bienvenid@!!!! -> " + loginData.usuario + "\nAhora se te dirigirá a la página principal!");
+                location.href="/logged/logged.html"
+                //formul.submit();
+            }
+}
+
+
 

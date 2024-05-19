@@ -1,6 +1,6 @@
 <!--FOMULARIO DE REGISTRO-->
 
-<form class="form"> 
+<form class="form" id="registroForm"> 
     <img id="cerrar" onclick= "closePopUp();" src="./IMG/close.png" alt="Se cierra">
     <h2 class="form_title"> Crear nueva cuenta </h2>
   
@@ -27,6 +27,6 @@
             <span class="form_line"></span>
         </div>
         <a> <input type="checkbox" name="Newsletters" id="News" value="" > Recibe nuestros newsletters </a>
-        <input type="submit" class="form_submit" value="Registrarse">
+        <input type="button" class="form_submit" value="Registrarse" onclick="validarFormulario();">
     </div>
 </form>

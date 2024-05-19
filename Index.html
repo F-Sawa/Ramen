@@ -36,7 +36,7 @@ rel="stylesheet">
 <img id="logo" src="./IMG/Ramen_LOGO.png" alt="Aqui estaria el logo,si hubiera uno">
 
 <ul class="padt2">
-<li id="home">Home </li>
+<li id="home" onclick="javascript:location.href='index.html'">  Home </li>
 <li id="tienda"> Tienda </li>
 
 <li class="log" onclick="showPopPup('/sesion/Log.html');"> Log In  |</li>
@@ -68,11 +68,11 @@ rel="stylesheet">
 <!--MAIN-->
 
 <section id="menus">
-
+<!--por el momento solo funciona la primera receta de la card sushi-->
 <div class="cnt">
 <div id="sushi" class="frente" onclick="doRotar('sushi', 'sushi2', 'comidas', 'aperit', 'postre', 'comidas2', 'aperit2','postre2')"> <h2>sushi</h2> <br> <img src="./IMG/sushi.png" alt="sushi"> </div>
 <div id="sushi2" class="dorso padt5" onclick="doRotar('sushi2', 'sushi', 'comidas', 'aperit', 'postre', 'comidas2', 'aperit2','postre2')"> <h2>sushi</h2>
-    <a> Arroz para sushi </a> <br>
+    <a href="Recetas.html"> Arroz para sushi </a> <br>
     <a> Makis </a> <br>
     <a> Rolls </a> <br>
     <a> Niguiri </a> <br>
@@ -118,7 +118,7 @@ rel="stylesheet">
 
 </section>
 
-<!--SOBRE NOSOTROS-->
+<!--SOBRE NOSOTROS
 
 <section>
 <div id="somos">
@@ -139,7 +139,7 @@ rel="stylesheet">
     <img src="./IMG/sushicito2.png" alt="Comida Rica">
 </div>
 </div>
-</section>
+</section>-->
 
 <!--FOOTER-->
 
