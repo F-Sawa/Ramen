@@ -1,31 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramen</title>
+    <link rel="icon" href="./IMG/Ramen.ico" type="image/x-icon">
+    <link rel="stylesheet" href="Style.css">
+    <script src="Log.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 
-<link rel="stylesheet" href="Style.css">
+    <!--FUENTES-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" 
+rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" 
+rel="stylesheet">   
+</head>
 
 <!--Esta seccion aun no esta terminada
 pendiente de arreglar la imagen de muestra-->
 
-<container class="recetario">
-<nav id="header">
+    <nav class="mart" id="header">
     <img id="logo" src="./IMG/Ramen_LOGO.png" alt="Aqui estaria el logo,si hubiera uno">
     
-    <ul>
-    <li id="home"> Home </li>
+    <ul class="padt2">
+    <li id="home" onclick="javascript:history.go(-1)"> Home </li>
     <li id="tienda"> Tienda </li>
     
+<div id="identificar">
     <li class="log" onclick="showPopPup('/sesion/Log.html');"> Log In  |</li>
     
     <li class="log" onclick="showPopPup('/sesion/Reg.html');"> Registro </li>
+</div>
     </ul>  
-    
-    </nav>
+   
+</nav>
 
-    <div id="image">
-    <img src="IMG-Recetas/arroz-para-sushi.jpg" alt="Arroz-para-sushi">
+<section class="recetario">
 
+    <div class="image">
+    <img class="muestra" src="IMG-Recetas/arroz-para-sushi.jpg" alt="Arroz-para-sushi">
     </div>
 
     <div class="recetas">
-        <h1> ゴハン </h1>
+        <h2 id="titulo-receta"> ゴハン </h2>
         <h4> Arroz para sushi </h4> 
         <h2>Ingredientes</h2>
 
@@ -57,9 +79,11 @@ Dejar reposar hasta que esté a temperatura ambiente para que esté listo para s
     </p>
 
     <h4>Aderezo</h4>
+
     <p>
-        En un bowl colocamos todos los ingredientes y mezclamos hasta obtener una mezcla bien homogénea.
+        En un bowl colocamos todos los ingredientes y
+        mezclamos hasta obtener una mezcla bien homogénea.
     </p>
 
     </div>
-</container>
+</section>

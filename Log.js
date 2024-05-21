@@ -85,7 +85,7 @@ function FetchPage(pagina) //Funcion que lee la página y la devuelve su conteni
 //Seccion Registro
 class Registro
 {
-    constructor(Nick,Usuario,Pass,Correo)
+    constructor(Usuario,Pass,Correo)
     {
         this.usuario=Usuario;
         this.correo=Correo;
@@ -107,11 +107,11 @@ function validarFormulario()
  {
     let formu = document.getElementById("registroForm");
     //formu.addEventListener('submit', validaFormulario);
-    formu.preventDefault();
+    //formu.preventDefault();
 
     const User = document.querySelector("#User");
     const Pass = document.querySelector("#Password");
-    const chkpol = document.querySelector("#aceptPol");
+    //const chkpol = document.querySelector("#aceptPol");
     const email = document.querySelector("#Mail");
     //const Correo = document.querySelector("#Correo");
     var validation = true;
@@ -129,16 +129,16 @@ function validarFormulario()
            return;
         }
 
-          if (chkpol.checked == false) {
+         /*if (chkpol.checked == false) {
          alert("Debe aceptar las políticas de privacidad para registrarse");
          validation = false;
          return;
-          }
+          }*/
 
     if(validation==true){
        // formu.submit();
        tryReg(User.value, Pass.value, email.value );
-       alert("Datos guardados, utilice 'iniciar sesion' para testearlos!")
+       alert("Te registraste exitosamente, inicia sesion")
        location.href="/"
     } else{
 
@@ -180,7 +180,6 @@ function loadData(usr,pass)
 }
 function tryIs()
 {
-    const formul = document.getElementById("#Loginform");
     const User = document.querySelector("#lgUser");
     const Pass = document.querySelector("#lgPass");
     
@@ -206,10 +205,41 @@ function tryIs()
         }
         if(valida==true)
             {
-                alert("Bienvenid@!!!! -> " + loginData.usuario + "\nAhora se te dirigirá a la página principal!");
-                location.href="/logged/logged.html"
-                //formul.submit();
+                alert("Bienvenidx " + loginData.usuario + "\nAhora se te dirigirá a la página principal!");
+                let lg= new Login(loginData.usuario);
+                savelogi(lg);
+                location.href="/";
+                //aca va el submit, si hubiera uno en backend (xD)
             }
+
+}
+
+function savelogi(User){
+    localStorage.setItem("logged",JSON.stringify(User));
+}
+
+function loadlog(){
+    let rk = localStorage.getItem("logged");
+    var lg = JSON.parse(rk);
+    if(lg.usuario=="")
+        {
+    return;
+        }
+        else{
+          CrearSesion(lg.usuario)
+        }
+        return new Login("");
+}
+function CrearSesion(usuario)
+{
+    let ident = document.getElementById('identificar');
+    ident.innerHTML = "<li class='userdata' id='userdata' onclick='CerrarSesion();'> &nbsp &nbsp &nbsp Cerrar Sesion </li> <li class='userdata'> Bienvenidx " + usuario + "</li> ";
+}
+loadlog();
+
+function CerrarSesion(){
+    localStorage.setItem("logged","");
+    location.href="/";
 }
 
 

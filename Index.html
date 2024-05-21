@@ -6,7 +6,7 @@
     <title>Ramen</title>
     <link rel="icon" href="./IMG/Ramen.ico" type="image/x-icon">
     <link rel="stylesheet" href="Style.css">
-    <script src="Log.js"></script>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 
     <!--FUENTES-->
@@ -38,10 +38,11 @@ rel="stylesheet">
 <ul class="padt2">
 <li id="home" onclick="javascript:location.href='index.html'">  Home </li>
 <li id="tienda"> Tienda </li>
-
+<div id="identificar">
 <li class="log" onclick="showPopPup('/sesion/Log.html');"> Log In  |</li>
 
 <li class="log" onclick="showPopPup('/sesion/Reg.html');"> Registro </li>
+</div>
 </ul>  
 
 </nav>
@@ -59,7 +60,7 @@ rel="stylesheet">
 
 </div>
 
-<div id="image">
+<div class="image">
 <img src="./IMG/ramen_edit.png" alt="Comida Rica">
 </div>
 <br>
@@ -72,7 +73,7 @@ rel="stylesheet">
 <div class="cnt">
 <div id="sushi" class="frente" onclick="doRotar('sushi', 'sushi2', 'comidas', 'aperit', 'postre', 'comidas2', 'aperit2','postre2')"> <h2>sushi</h2> <br> <img src="./IMG/sushi.png" alt="sushi"> </div>
 <div id="sushi2" class="dorso padt5" onclick="doRotar('sushi2', 'sushi', 'comidas', 'aperit', 'postre', 'comidas2', 'aperit2','postre2')"> <h2>sushi</h2>
-    <a> Arroz para sushi </a> <br>
+    <a href="Recetas.html"> Arroz para sushi</a> <br>
     <a> Makis </a> <br>
     <a> Rolls </a> <br>
     <a> Niguiri </a> <br>
@@ -189,7 +190,7 @@ rel="stylesheet">
         <p>Todos los derechos reservardos 2024 | F. Sawa </p>
     </div>
 </footer>
-
+<script src="Log.js"></script>
 </body>
 
 </html>

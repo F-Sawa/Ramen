@@ -53,6 +53,10 @@ ul li:hover{
     color: #ebaa04;
 }
 
+#identificar{
+    display: inline;
+}
+
 #logo {
     width: 64px;
     height: 64px;
@@ -121,13 +125,17 @@ ul li:hover{
     float: left;
 }
 
-#image{
+.image{
     width: 50%;
     text-align: center;
     float: right;
     margin-top: 50px;
     display:inline;
 }
+
+.image img {
+    max-width: 100%;
+    }
 
 
 /*MAIN*/
@@ -521,7 +529,7 @@ ul li:hover{
 
 @media all and (max-width: 480px) {
     
-#image img {
+.image img {
         max-width: 100%;
         margin-top: 20%;
     }
@@ -607,7 +615,7 @@ ul li:hover{
 
 
 @media all and (max-width: 801px) {
-#image img {
+.image img {
         max-width: 100%;
         margin-top: 20%;
     }
@@ -655,7 +663,7 @@ ul li:hover{
 
 @media all and (max-width: 1024px) {
 
-#image img {
+.image img {
     max-width: 100%;
     margin-top: 20%;
     }
@@ -705,9 +713,9 @@ ul li:hover{
 
  }
 
- /*RECETAS -Proximamente-
+ /*RECETAS -Proximamente-*/
 
-.recetario{
+.recetario {
     background-image:url("./IMG/negra02.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -715,7 +723,7 @@ ul li:hover{
     text-align: center;
 }
 
-h1{
+#titulo-receta{
     font-family: "Noto Sans JP", sans-serif;
     font-optical-sizing: auto;
     font-weight: 600;
@@ -726,7 +734,6 @@ h1{
 }
 
 
-
 .recetas{
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
@@ -734,10 +741,20 @@ h1{
     font-style: normal;
     font-size: 14px;
     color: aliceblue;
-    margin-bottom: 20px;
+    margin-bottom: 80px;
+    max-width: 48%;
+    float: left;
 }
-*/
+ .muestra{
+    margin-top: 70px;
+ }
  
+ .userdata{
+    float: right;
+ }
 
-
-
+ #userdata{
+    margin-left: 10px;
+    margin-top: 5px;
+    font-size: 12px;
+ }
