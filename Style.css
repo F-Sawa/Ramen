@@ -525,6 +525,9 @@ ul li:hover{
 
 
 }
+.map{
+    overflow:hidden;
+}
 
 /*RESPONSIVE*/
 
