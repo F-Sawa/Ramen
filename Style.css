@@ -147,6 +147,7 @@ ul li:hover{
     display: flex;
     margin-top: 1px;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 /*ANIMACIONES*/
