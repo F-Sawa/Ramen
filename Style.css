@@ -667,36 +667,6 @@ ul li:hover{
 .footer links ul li a{
     margin-bottom:0;
 }
-.frente {
-    /*Alineacion*/
-    width: 23%;
-    min-width: 23%;
-    margin-top: 30px;
-    text-align: center;
-    background-image: url("./IMG/Cuadro.png");
-    background-size:100%;
-    background-repeat: no-repeat;
-    z-index: 2;
-    position: absolute;
-    visibility: hidden;
-    animation: 0.9s rotacionEntrada 0.9s 1 forwards;
-}
-.dorso {
-    /*Alineacion*/
-    width: 100%;
-    min-width: 100%;
-    margin-top: 30px;
-    text-align: center;
-    background-image: url("./IMG/Cuadro2.png");
-    background-size:100%;
-    background-repeat: no-repeat;
-    z-index: 2;
-    visibility: hidden;
-    float: left;
-    z-index: 1;
-    transform: rotateY(90deg);
-    line-height: 30px;
-}
 }
 
 
