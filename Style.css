@@ -534,200 +534,6 @@ ul li:hover{
     overflow:hidden;
 }
 
-/*RESPONSIVE*/
-
-@media all and (max-width: 480px) {
-    
-.image img {
-        max-width: 100%;
-        margin-top: 20%;
-    }
-
-#saludo {
-    font-family: "Noto Sans JP", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: normal;
-    margin-top: 80px;
-    font-size: 30px;
-    color: aliceblue;
-}
-
-#scroll{
-    visibility: hidden;
-}
-
-.cnt
-{
-   display: flex;
-   min-width: 48%;
-   width: 48%;
-   float: left;
-   margin-left: 1%;
-   margin-right: 1%;
-   flex-wrap: wrap;
-}
-
-.frente{
-    width: 48%;
-    min-width: 48%;
-}
-
-.frente h2{
-    /*Fuente*/
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 15px;
-    font-style: normal;
-    font-size: 16px;
-    color: aliceblue;
-    margin-top: 45%;
-}
-
-.dorso a{
-
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 20px;
-    font-style: normal;
-    font-size: 18px;
-    color: aliceblue;
-}
-
-.dorso h2{
-
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 20px;
-    font-style: normal;
-    font-size: 10px;
-    color: aliceblue;
-    line-height: 16px;
-    margin-bottom: 20px;
-}
-
-.form_title{
-    font-size: 28.8px;
-}
-
- #somos{
-    margin-top: 80px;
-    font-size: 30px;
- }
-
- #image2 {
-    max-width: 100%;
-    margin-top: 20%;
-}
-
-  }
-
-
-@media all and (max-width: 801px) {
-.image img {
-        max-width: 100%;
-        margin-top: 20%;
-    }
-
-#saludo {
-    font-family: "Noto Sans JP", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: normal;
-    margin-top: 80px;
-    font-size: 30px;
-    color: aliceblue;
-}
-
-#scroll{
-    visibility: hidden;
-}
-
-.cnt
-{
-   display: flex;
-   min-width: 40%;
-   width: 40%;
-   float: left;
-   margin-left: 1%;
-   margin-right: 1%;
-   flex-wrap: wrap;
-}
-
-.frente{
-    width: 40%;
-    min-width: 40%;
-}
-
-.footer-row{
-    text-align: center;
-}
-.footer-links{
-    width: 50%;
-    margin-bottom: 30px;
-}
-.footer-links h4{
-    margin-bottom:10px;
-}
-.footer links ul li a{
-    margin-bottom:0;
-}
-}
-
-
-
-@media all and (max-width: 1024px) {
-
-.image img {
-    max-width: 100%;
-    margin-top: 20%;
-    }
-
-#saludo {
-    font-family: "Noto Sans JP", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: normal;
-    margin-top: 80px;
-    font-size: 30px;
-    color: aliceblue;
-    }
-
-.frente h2{
-        /*Fuente*/
-        font-family: "Montserrat", sans-serif;
-        font-optical-sizing: auto;
-        font-weight: 15px;
-        font-style: normal;
-        font-size: 16px;
-        color: aliceblue;
-        margin-top: 45%;
-    }
-    
-.dorso a{
-    
-        font-family: "Montserrat", sans-serif;
-        font-optical-sizing: auto;
-        font-weight: 20px;
-        font-style: normal;
-        font-size: 18px;
-        color: aliceblue;
-    }
-    
-.dorso h2{
-    
-        font-family: "Montserrat", sans-serif;
-        font-optical-sizing: auto;
-        font-weight: 20px;
-        font-style: normal;
-        font-size: 10px;
-        color: aliceblue;
-        line-height: 16px;
-        margin-bottom: 20px;
-    }
-
- }
-
  /*RECETAS -Proximamente-*/
 
 .recetario {
@@ -773,3 +579,249 @@ ul li:hover{
     margin-top: 5px;
     font-size: 12px;
  }
+
+ .ubicacion{
+    float: right;
+    width: 100%;
+    margin-right: 50px;
+    margin-top: 100px;
+    display:flex;
+    flex-direction: row;
+    background-size: cover;
+ }
+
+.ubitit{
+   width: 48%;
+}
+
+.map{
+    width: 35%;
+
+}
+
+ .ubicacion p{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    color: aliceblue;
+    font-weight: 5px;
+    
+
+ }
+
+ .ubicacion h2{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    color: aliceblue;
+    font-weight: 10px;
+    font-size: 18px;
+ }
+ 
+
+ /*RESPONSIVE*/
+
+@media all and (max-width: 480px) {
+    
+    .image img {
+            max-width: 100%;
+            margin-top: 20%;
+        }
+    
+    #saludo {
+        font-family: "Noto Sans JP", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
+        margin-top: 80px;
+        font-size: 30px;
+        color: aliceblue;
+    }
+    
+    #scroll{
+        visibility: hidden;
+    }
+    
+    .cnt
+    {
+       display: flex;
+       min-width: 48%;
+       width: 48%;
+       float: left;
+       margin-left: 1%;
+       margin-right: 1%;
+       flex-wrap: wrap;
+    }
+    
+    .frente{
+        width: 48%;
+        min-width: 48%;
+    }
+    
+    .frente h2{
+        /*Fuente*/
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 15px;
+        font-style: normal;
+        font-size: 16px;
+        color: aliceblue;
+        margin-top: 45%;
+    }
+    
+    .dorso a{
+    
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 20px;
+        font-style: normal;
+        font-size: 18px;
+        color: aliceblue;
+    }
+    
+    .dorso h2{
+    
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 20px;
+        font-style: normal;
+        font-size: 10px;
+        color: aliceblue;
+        line-height: 16px;
+        margin-bottom: 20px;
+    }
+    
+    .form_title{
+        font-size: 28.8px;
+    }
+    
+     #somos{
+        margin-top: 80px;
+        font-size: 30px;
+     }
+    
+     #image2 {
+        max-width: 100%;
+        margin-top: 20%;
+    }
+    
+      }
+    
+    .form{
+        max-width: 90%;
+        margin-left: 5%;
+    }
+
+
+    .ubitit{
+    width:25% ;
+    margin-left: 60px;
+    }
+    
+    .map{
+    width: 50%;
+    margin-left: 40px;
+     }
+    
+    
+    @media all and (max-width: 801px) {
+    .image img {
+            max-width: 100%;
+            margin-top: 20%;
+        }
+    
+    #saludo {
+        font-family: "Noto Sans JP", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
+        margin-top: 80px;
+        font-size: 30px;
+        color: aliceblue;
+    }
+    
+    #scroll{
+        visibility: hidden;
+    }
+    
+    .cnt
+    {
+       display: flex;
+       min-width: 40%;
+       width: 40%;
+       float: left;
+       margin-left: 1%;
+       margin-right: 1%;
+       flex-wrap: wrap;
+    }
+    
+    .frente{
+        width: 40%;
+        min-width: 40%;
+    }
+    
+    .footer-row{
+        text-align: center;
+    }
+    .footer-links{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+    .footer-links h4{
+        margin-bottom:10px;
+    }
+    .footer links ul li a{
+        margin-bottom:0;
+
+    }
+    }
+    
+    
+    @media all and (max-width: 1024px) {
+    
+    .image img {
+        max-width: 100%;
+        margin-top: 20%;
+        }
+    
+    #saludo {
+        font-family: "Noto Sans JP", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
+        margin-top: 80px;
+        font-size: 30px;
+        color: aliceblue;
+        }
+    
+    .frente h2{
+            /*Fuente*/
+            font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 15px;
+            font-style: normal;
+            font-size: 16px;
+            color: aliceblue;
+            margin-top: 45%;
+        }
+        
+    .dorso a{
+        
+            font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 20px;
+            font-style: normal;
+            font-size: 18px;
+            color: aliceblue;
+        }
+        
+    .dorso h2{
+        
+            font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 20px;
+            font-style: normal;
+            font-size: 10px;
+            color: aliceblue;
+            line-height: 16px;
+            margin-bottom: 20px;
+        }
+        }
