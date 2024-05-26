@@ -403,6 +403,15 @@ ul li:hover{
     margin-top: 20px;
 }
 
+.der2{
+    color: aliceblue;
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    text-align: center;
+}
+
+
+
 /*FORMULARIOS-Log, Reg, Cont.*/
 
 .form{
@@ -530,9 +539,6 @@ ul li:hover{
 
 
 }
-.map{
-    overflow:hidden;
-}
 
  /*RECETAS -Proximamente-*/
 
@@ -583,20 +589,24 @@ ul li:hover{
  .ubicacion{
     float: right;
     width: 100%;
+    height: 100%;
     margin-right: 50px;
     margin-top: 100px;
     display:flex;
     flex-direction: row;
+    flex-wrap: wrap;
     background-size: cover;
  }
 
 .ubitit{
    width: 48%;
+   min-width: 400px;
 }
 
 .map{
     width: 35%;
-
+    min-width: 300px;
+    overflow:hidden;
 }
 
  .ubicacion p{
@@ -604,6 +614,7 @@ ul li:hover{
     font-optical-sizing: auto;
     color: aliceblue;
     font-weight: 5px;
+    
     
 
  }
@@ -616,6 +627,9 @@ ul li:hover{
     font-size: 18px;
  }
  
+ .piepag{
+    background: linear-gradient(rgb(189, 36, 43), rgb(153, 0, 0));
+ }
 
  /*RESPONSIVE*/
 
