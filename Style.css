@@ -771,11 +771,11 @@ ul li:hover{
         width: 40%;
         min-width: 40%;
         padding-bottom: 15px;
-        min-height: 480vh;
+        min-height: 100%;
     }
     .dorso{
         padding-bottom: 15px;
-        min-height: 480vh;
+        min-height: 100%;
     }
     .footer-row{
         text-align: center;
