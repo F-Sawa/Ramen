@@ -777,6 +777,12 @@ ul li:hover{
         padding-bottom: 25px;
         min-height: 100%;
     }
+    .container {
+    max-width: 1200px;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    }
     .footer-row{
         text-align: center;
     }
