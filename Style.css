@@ -199,7 +199,7 @@ ul li:hover{
     min-width: 23%;
     margin-top: 30px;
     margin-bottom: 30px;
-    min-height: 100%;
+    min-height: 480px;
     text-align: center;
     background-image: url("./IMG/Cuadro.png");
     background-size:100%;
@@ -214,7 +214,7 @@ ul li:hover{
     width: 100%;
     min-width: 100%;
     margin-top: 30px;
-    min-height: 100%;
+    min-height: 480px;
     text-align: center;
     background-image: url("./IMG/Cuadro2.png");
     background-size:100%;
