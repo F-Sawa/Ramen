@@ -788,12 +788,24 @@ ul li:hover{
         margin-bottom:10px;
         font-size: 15px;
     }
-    .footer links ul li a{
-        margin-bottom:0;
-        font-size: 9px;
+   .footer-links ul li a {
+    font-size: 10px;
+    text-decoration: none;
+    color: aliceblue;
+    display: block;
+    margin-bottom: 0px;
+    transition: all .3s ease;
+    cursor: pointer;
+    }
     }
     .footer{
     padding: 20px 0;
+    }
+    .social a {
+    min-height: 20px;
+    width: 20px;
+    margin: 0 10px 10px 0;
+    line-height: 20px;
     }
     }
 
