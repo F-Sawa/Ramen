@@ -789,7 +789,9 @@ ul li:hover{
     }
     .footer links ul li a{
         margin-bottom:0;
-
+    }
+    .footer{
+    padding: 20px 0;
     }
     }
     
