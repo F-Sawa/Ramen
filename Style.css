@@ -770,11 +770,11 @@ ul li:hover{
     .frente{
         width: 40%;
         min-width: 40%;
-        padding-bottom: 15px;
+        padding-bottom: 25px;
         min-height: 100%;
     }
     .dorso{
-        padding-bottom: 15px;
+        padding-bottom: 25px;
         min-height: 100%;
     }
     .footer-row{
