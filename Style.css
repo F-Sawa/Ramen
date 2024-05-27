@@ -770,8 +770,13 @@ ul li:hover{
     .frente{
         width: 40%;
         min-width: 40%;
+        padding-bottom: 15px;
+        min-height: 480vh;
     }
-    
+    .dorso{
+        padding-bottom: 15px;
+        min-height: 480vh;
+    }
     .footer-row{
         text-align: center;
     }
