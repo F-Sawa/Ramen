@@ -741,7 +741,10 @@ ul li:hover{
             max-width: 100%;
             margin-top: 20%;
         }
-    
+    #pre2{
+    margin-bottom: 15px;
+    margin-top: 15px;
+    }
     #saludo {
         font-family: "Noto Sans JP", sans-serif;
         font-optical-sizing: auto;
@@ -751,7 +754,9 @@ ul li:hover{
         font-size: 20px;
         color: aliceblue;
     }
-    
+    #menus{
+        margin-bottom: 30px;
+    }
     #scroll{
         visibility: hidden;
     }
@@ -765,6 +770,8 @@ ul li:hover{
        margin-left: 1%;
        margin-right: 1%;
        flex-wrap: wrap;
+       margin-top: 20px;
+       margin-bottom: 20px;
     }
     
     .frente{
@@ -783,6 +790,11 @@ ul li:hover{
     margin-left: auto;
     margin-right: auto;
     }
+    .der{
+    font-size: 12px;
+    margin-top: 30px;
+    margin-bottom: 10px
+    }
     .footer-row{
         text-align: center;
     }
@@ -791,21 +803,22 @@ ul li:hover{
         margin-bottom: 30px;
     }
     .footer-links h4{
-        margin-bottom:10px;
-        font-size: 15px;
+        margin-bottom: 20px;
+        font-size: 12px;
     }
    .footer-links ul li a {
-    font-size: 11px;
+    font-size: 12px;
     text-decoration: none;
     color: aliceblue;
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
+    margin-top: 10px;
     transition: all .3s ease;
     cursor: pointer;
     }
     }
     .footer{
-    padding: 40px 0;
+    padding: 40px 10px;
     }
     .social a {
     min-height: 20px;
