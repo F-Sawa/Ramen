@@ -26,7 +26,7 @@ pendiente de arreglar la imagen de muestra-->
 
     <nav class="mart" id="header">
     <img id="logo" src="./IMG/Ramen_LOGO.png" alt="Aqui estaria el logo,si hubiera uno">
-   
+    
     <ul class="padt2">
     <li id="home" onclick="javascript:location.href='/'"> Home </li>
     <li id="tienda"> Tienda </li>
@@ -39,48 +39,41 @@ pendiente de arreglar la imagen de muestra-->
     </ul>  
    
 </nav>
+<body>
+    <section id="Perfil" style="display: inline-block; width: 100%; text-align: center;">
+        <div class="recetas" style="margin-top: 7%; width:auto">
+            <h3 class="subtitle">Datos de usuario</h3>
+              <table id="list-table-usr" class="table" style="width:auto;background-color: rgba(0,0,0,0.8);">
+                <thead>
+                 <tr>
+                    <th style="width: 200px;">Usuario </th> <th>Correo</th>
+                 </tr>
+            </thead>
+            <tbody>
+            </tbody>
+            </table>
+            <input type="email" name="correo" id="nuevoCorreo" placeholder="Modificar correo">
+            <button class="btn-cac" onclick='UpdateCorreo();'><i class="fa fa-pencil" ></button></i>
+         </div>  
+    </section>
+    <section id="Favoritos" class="recetario" style="display: inline-block; width: 100%; text-align: center;">
+    <div class="recetas" style="margin-top: 3%; width:auto">
+        <h3 class="subtitle">Listado de Favoritos</h3>
+          <table id="list-table-favs" class="table" style="width:auto;background-color: rgba(0,0,0,0.8);">
+            <thead>
+             <tr>
+                <th style="width: 200px;">Nombre </th> <th>Banner</th> <th>Opciones</th>
+             </tr>
+        </thead>
+        <tbody>
+        </tbody>
+        </table>
+     </div>   
+    </section>
+</body>
 
-<section class="recetario">
-
-    <div class="image" id="ImagenMuestra">
-    <img class="muestra"  src="IMG-Recetas/arroz-para-sushi.jpg" alt="Arroz-para-sushi">
-    <input type="button" onclick="AgregarFavorito();" value="Agregar a favoritos">
-    </div>
-
-    <div class="recetas">
-        <h2 id="titulo-receta"> ゴハン </h2>
-        <h4 id="nombreReceta"> Arroz para sushi </h4> 
-        <h2>Ingredientes</h2>
-
-    <div id="ingredientesr"></div>
-
-    <h3 id="aderezor">Aderezo</h3>
-    <div id="aderezorl"></div> <br>
-
-    <h2>Preparación</h2> <br>
-    <h4 id="nombreR"> Arroz</h4>
-    <p id="PreparacionR">
-Colocar el arroz en la olla, y lavarlo en abundante agua fría de 7-8 veces, luego agregar la misma parte en agua fría, <br>
-tapar y llevar a cocción por 11 minutos a fuego máximo. <br>
-Sin destapar, cocinar a fuego corona por 11 minutos más, <br>
-apagar el fuego y dejar reposar por 15 minutos. <br>
-Por ultimo en el sushi oke (fuente de madera), <br>
-colocar el arroz cocido, retirar el fondo tostado y con espátula de arroz separar los granos. <br>
-Agregar el aderezo mezclar todo con la espátula de arroz y mientras se mezclar con abanico ir enfriando el arroz. <br>
-Dejar reposar hasta que esté a temperatura ambiente para que esté listo para su uso.
-    </p>
-
-    <h4 id="PreparacionAT">Aderezo</h4>
-
-    <p id="PreparacionA">
-        En un bowl colocamos todos los ingredientes y
-        mezclamos hasta obtener una mezcla bien homogénea.
-    </p>
-    <div id="favoritoadd"></div>
-    </div>
-    
-</section>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="request.js"></script>
-<script src="receta.js"></script>
+<script src="perfil.js"></script>
 <script src="Log.js"></script>
+</html>
