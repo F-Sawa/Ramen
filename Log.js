@@ -137,16 +137,9 @@ function validarFormulario()
 
     if(validation==true){
        // formu.submit();
-       let resultado= tryReg(User.value, Pass.value, email.value );
-       //alert("Te registraste exitosamente, inicia sesion")
-       if(resultado==true)
-       {
-        location.href="/"
-       }
-       else{
-        return;
-       }
-       
+       tryReg(User.value, Pass.value, email.value );
+       alert("Te registraste exitosamente, inicia sesion")
+       location.href="/"
     } else{
 
         return false;
@@ -157,13 +150,10 @@ function validarFormulario()
     este método solo será utilizado para guardar la info de registro a modo de usar el login y se borrará cuando
     se programe el backend */
     
-async function tryReg(usuario, pass, email)
+function tryReg(usuario, pass, email)
 {
-    passEnc = SHA1(pass);
-    const Registrodat= new Registro(usuario,passEnc, email);
-//savedata(Registrodat);
-    let resultado = await Registrarse(usuario, passEnc, email)
-   return resultado;
+    const Registrodat= new Registro(usuario, pass, email);
+savedata(Registrodat);
 }
 function savedata(reg)
 {
@@ -171,7 +161,6 @@ function savedata(reg)
 }
 function loadData(usr,pass)
 {
-    /*
     let rk = localStorage.getItem("Registro");
     rg = JSON.parse(rk);
     if(usr==rg.usuario)
@@ -183,15 +172,13 @@ function loadData(usr,pass)
             }
         }
         return new Login("");
-        */
-
     /*
     alert (rg.usuario);
     alert (rg.password);
     alert (rg.correo);
     */
 }
-async function tryIs()
+function tryIs()
 {
     const User = document.querySelector("#lgUser");
     const Pass = document.querySelector("#lgPass");
@@ -209,19 +196,18 @@ async function tryIs()
                valida=false;
                return; 
         }
-    let passEnc = SHA1(Pass.value);
-    let loginData= await IniciarSesion(User.value, passEnc); //loadData(User.value,Pass.value);
+    let loginData=loadData(User.value,Pass.value);
     if(loginData.usuario=="")
         {
-            
+            alert("Usuario o contraseña incorrectos!");
             valida=false;
-        
+            return; 
         }
         if(valida==true)
             {
                 alert("Bienvenidx " + loginData.usuario + "\nAhora se te dirigirá a la página principal!");
-               // let lg= new Login(loginData.usuario);
-               // savelogi(lg);
+                let lg= new Login(loginData.usuario);
+                savelogi(lg);
                 location.href="/";
                 //aca va el submit, si hubiera uno en backend (xD)
             }
@@ -231,11 +217,7 @@ async function tryIs()
 function savelogi(User){
     localStorage.setItem("logged",JSON.stringify(User));
 }
-function CrearSesion(usuario)
-{
-    let ident = document.getElementById('identificar');
-    ident.innerHTML = "<li class='userdata' id='userdata' onclick='CerrarSesion();'> &nbsp &nbsp &nbsp Cerrar Sesion </li> <li class='userdata' onclick='goPerfil();'> Bienvenidx " + usuario + "</li> ";
-}
+
 function loadlog(){
     let rk = localStorage.getItem("logged");
     var lg = JSON.parse(rk);
@@ -248,21 +230,16 @@ function loadlog(){
         }
         return new Login("");
 }
-
+function CrearSesion(usuario)
+{
+    let ident = document.getElementById('identificar');
+    ident.innerHTML = "<li class='userdata' id='userdata' onclick='CerrarSesion();'> &nbsp &nbsp &nbsp Cerrar Sesion </li> <li class='userdata'> Bienvenidx " + usuario + "</li> ";
+}
 loadlog();
 
 function CerrarSesion(){
     localStorage.setItem("logged","");
     location.href="/";
-}
-function goPerfil()
-{
-    let rk = localStorage.getItem("logged");
-    var lg = JSON.parse(rk);
-    if(lg.id > 0)
-    {
-        location.href="/perfil.html";
-    }
 }
 
 

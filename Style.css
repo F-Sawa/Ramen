@@ -11,7 +11,6 @@ aliceblue: 240, 248, 255
     box-sizing: border-box;
     list-style: none;
 }
-
 body{
      background-image:url("./IMG/negra02.jpg");
     background-repeat: no-repeat;
@@ -199,6 +198,7 @@ ul li:hover{
     width: 23%;
     min-width: 23%;
     margin-top: 30px;
+    margin-bottom: 30px;
     min-height: 480px;
     text-align: center;
     background-image: url("./IMG/Cuadro.png");
@@ -640,12 +640,6 @@ ul li:hover{
             margin-top: 20%;
         }
     
-        .form{
-            max-width: 90%;
-            margin-left: 5%;
-        }
-
-
     #saludo {
         font-family: "Noto Sans JP", sans-serif;
         font-optical-sizing: auto;
@@ -669,7 +663,6 @@ ul li:hover{
        margin-left: 1%;
        margin-right: 1%;
        flex-wrap: wrap;
-       margin-bottom: -150px;
     }
     
     .frente{
@@ -725,6 +718,12 @@ ul li:hover{
     }
     
       }
+    
+    .form{
+        max-width: 90%;
+        margin-left: 5%;
+    }
+
 
     .ubitit{
     width:25% ;
@@ -742,28 +741,22 @@ ul li:hover{
             max-width: 100%;
             margin-top: 20%;
         }
-    
-            
-    .form{
-        max-width: 90%;
-        margin-left: 5%;
+    #pre2{
+    margin-bottom: 15px;
+    margin-top: 15px;
     }
-
-    .form_line{
-        max-width: 80%;
-        margin-left: 5%;
-    }
-
     #saludo {
         font-family: "Noto Sans JP", sans-serif;
         font-optical-sizing: auto;
         font-weight: 600;
         font-style: normal;
         margin-top: 80px;
-        font-size: 30px;
+        font-size: 20px;
         color: aliceblue;
     }
-    
+    #menus{
+        margin-bottom: 30px;
+    }
     #scroll{
         visibility: hidden;
     }
@@ -777,30 +770,64 @@ ul li:hover{
        margin-left: 1%;
        margin-right: 1%;
        flex-wrap: wrap;
+       margin-top: 20px;
+       margin-bottom: 20px;
     }
     
     .frente{
         width: 40%;
         min-width: 40%;
+        padding-bottom: 35px;
+        min-height: 100%;
     }
-    
+    .dorso{
+        padding-bottom: 35px;
+        min-height: 100%;
+    }
+    .container {
+    max-width: 1200px;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    }
+    .der{
+    font-size: 12px;
+    margin-top: 30px;
+    margin-bottom: 10px
+    }
     .footer-row{
         text-align: center;
     }
     .footer-links{
-        width: 50%;
+        width: 25%;
         margin-bottom: 30px;
     }
     .footer-links h4{
-        margin-bottom:10px;
+        margin-bottom: 20px;
+        font-size: 12px;
     }
-    .footer links ul li a{
-        margin-bottom:0;
+   .footer-links ul li a {
+    font-size: 12px;
+    text-decoration: none;
+    color: aliceblue;
+    display: block;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    transition: all .3s ease;
+    cursor: pointer;
+    }
+    }
+    .footer{
+    padding: 40px 10px;
+    }
+    .social a {
+    min-height: 20px;
+    width: 20px;
+    margin: 0 10px 10px 0;
+    line-height: 20px;
+    }
+    }
 
-    }
-    }
-    
-    
     @media all and (max-width: 1024px) {
     
     .image img {
